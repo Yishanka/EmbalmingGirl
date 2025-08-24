@@ -1,0 +1,178 @@
+.game-container {
+  width:95;
+  height: 100vh;
+  background-color: #f1f0ea;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "Microsoft YaHei", sans-serif;
+  position: relative;
+}
+
+/* 顶部状态栏 */
+.top-status-bar {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  padding: 12px;
+}
+
+.status-pill {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  background-color: #ddd;
+}
+
+.status-pill.ready {
+  background-color: #a5d6a7;
+  color: #2e7d32;
+}
+
+.status-pill.not-ready {
+  background-color: #ef9a9a;
+  color: #c62828;
+}
+
+/* 中部牌桌区 */
+.table-area {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: radial-gradient(circle, #eee 0%, #ccc 100%);
+  position: relative;
+}
+
+.played-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+.card-on-table {
+  background-color: #fff8e1;
+  border: 2px solid #ffcc80;
+  border-radius: 10px;
+  padding: 12px 16px;
+  font-size: 16px;
+  font-weight: bold;
+  min-width: 80px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* 底部区域 */
+.bottom-hand-area {
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fafafa;
+  border-top: 2px solid #ddd;
+}
+
+.hand-cards {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 16px 0;
+}
+
+.hand-card {
+  padding: 10px 16px;
+  border-radius: 12px;
+  background-color: #e3f2fd;
+  border: 1px solid #64b5f6;
+  font-size: 14px;
+  cursor: pointer;
+  min-width: 90px;
+  transition: all 0.2s ease-in-out;
+}
+
+.hand-card:hover:not(:disabled) {
+  background-color: #bbdefb;
+}
+
+.hand-card:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.control-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.control-button {
+  padding: 10px 16px;
+  background-color: #eeeeee;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.control-button:hover {
+  background-color: #ddd;
+}
+
+.control-button.start {
+  background-color: #aed581;
+  border: 1px solid #7cb342;
+  color: #2e7d32;
+  font-weight: bold;
+}
+
+.control-button.start:hover {
+  background-color: #9ccc65;
+}
+
+.hand-card.selected {
+  border: 2px solid gold;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px gold;
+}
+
+.card-image {
+  width: 100px;
+  height: auto;
+}
+
+/* .card-on-table {
+  width: 80px;
+  margin: 5px;
+} */
+
+.card-on-table.clickable {
+  cursor: pointer;
+  border: 2px dashed #4caf50;
+  box-shadow: 0 0 8px #4caf50;
+}
+
+.harmony-cards, .played-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 10px;
+}
+
+.viewed-harmony-cards {
+  margin-top: 12px;
+  padding: 8px;
+  border: 1px dashed #aaa;
+  background-color: #f9f9f9;
+}
+
+.viewed-cards-list {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.card-image.small {
+  height: 80px;
+}

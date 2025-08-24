@@ -1,0 +1,45 @@
+.lobby-container {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+  font-family: sans-serif;
+}
+
+.input-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.match-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 4px;
+}
+
+.leave-button {
+  margin-left: 10px;
+  background: crimson;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.leave-button:hover {
+  background: darkred;
+}
+
+.exit-button {
+  margin-top: 30px;
+  background: gray;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.exit-button:hover {
+  background: black;
+}

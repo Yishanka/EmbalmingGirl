@@ -1,0 +1,23 @@
+.home {
+  text-align: center;
+  padding: 4rem;
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  color: #fff;
+  height: 100vh;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: #ff69b4;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  margin-top: 2rem;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #ff85c1;
+}
