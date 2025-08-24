@@ -1,6 +1,6 @@
 # 冰冷的她醒来之前 —— 基于 boardgame.io 开发的卡牌游戏
 
-[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/Yishanka/CNN_from_scratch)
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/Yishanka/EmbalmingGirl)
 
 ## 1. 项目简介
 
